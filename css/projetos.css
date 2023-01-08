@@ -1,0 +1,150 @@
+.projetos-bg {
+  background-color: var(--c2);
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.projetos h1 {
+  font: 500 2.5rem "Rubik";
+  color: var(--b1);
+  margin-bottom: 40px;
+}
+
+.projetos-conteudo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.projetos h1 {
+  font: 500 2.5rem "Rubik";
+  color: var(--b1);
+  margin-bottom: 40px;
+}
+
+.projeto {
+  background-color: var(--c1);
+  border-radius: 10px;
+  width: 360px;
+  border: 2px solid transparent;
+  transition: all .3s ease-out;
+}
+
+.projeto:hover {
+  border: 2px solid var(--border);
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+}
+
+.projetos img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--border);
+}
+
+.p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 24px 32px;
+  min-height: 150px;
+}
+
+.p1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.p1 h2 {
+  font: 500 18px "rubik", sans-serif;
+  color: var(--b1);
+}
+
+.p1 p {
+font: 400 1rem "inter";
+color: var(--nav);
+margin-left: 8px;
+margin-top: 4px;
+}
+
+.p2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.p2 a {
+  font: 500 0.875rem "rubik";
+  text-align: center;
+  color: var(--b1);
+  padding: 8px 28px;
+  border-radius: 5px;
+  border: 2px solid var(--border);
+  /* align-items: center; */
+  transition: all .3s ease-out;
+  width: 152px;
+}
+
+.p2 a:hover {
+  background-color: var(--c2);
+}
+
+@media(max-width:767px) {
+  .projetos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .projetos h1 {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+  .projetos-conteudo {
+    gap:20px;
+  }
+}
+
+@media(max-width:450px) {
+  .projeto {
+    width: 100%;
+  } 
+  .p1 p {
+    margin-left: 0px;
+    font: 400 14px "inter";
+  }
+  .p {
+    padding: 20px 28px;
+  }
+}
+
+@media(max-width:380px) {
+  .p1 h2 {
+    font: 500 16px "rubik", sans-serif;
+    text-align: center;
+  }
+  .p1 {
+    align-items: center;
+  }
+  .p {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

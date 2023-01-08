@@ -1,0 +1,79 @@
+.header-bg {
+  background-color: var(--c1);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+
+.header-bg::after {
+  background-color: var(--b1);
+  opacity: 10%;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+}
+
+.logocv {
+  width: 82px;
+  height: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  
+}
+
+.navbar a {
+  color: var(--b2);
+  font: 400 1rem "rubik", sans-serif;
+  letter-spacing: .05rem;
+  padding: 15px 0px;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.navbar a::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(to right, var(--c1), var(--border));
+  transition: all 0.3s ease-out;
+  top: 63px;
+  left: 0px;
+}
+
+.navbar a:hover{
+  color: var(--b1);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+
+@media(max-width:1024px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media(max-width:767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

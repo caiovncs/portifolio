@@ -1,0 +1,96 @@
+.skills-bg {
+  background-color: var(--c1);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.skills h1 {
+  font: 500 2.5rem "Rubik";
+  color: var(--b1);
+  margin-bottom: 40px;
+}
+
+.skills-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.s{
+  display: grid;
+  grid-template-columns: auto 70px;
+  background-color: var(--c2);
+  border-radius: 0px 10px 10px 0px;
+  padding: 16px 24px;
+  place-items: center;
+  gap: 0px 24px;
+  position: relative; 
+  transition: .3s ease-out; 
+  width: 242px;
+  height: 102px;
+}
+
+.s::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  left: 0px;
+  background: linear-gradient(to bottom, var(--a1), var(--a2));
+  transition: 0.3s;
+}
+
+.s:hover::before{
+  height: 100%;
+}
+
+.s > img{
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.s > p{
+  grid-column: 1;
+  color: var(--b1);
+  width: 100px;
+  text-align: center;
+  font: 400 0.8rem "inter", sans serif;
+  color: var(--nav);
+}
+
+.skills-conteudo h2 {
+  font: 400 1.125rem "rubik", sans-serif;
+  text-transform: uppercase;
+  color: var(--b2);
+  grid-column: 1;
+}
+
+.s:hover>h2{
+  /* color: var(--border); */
+  transition: all .3s ease-out;
+}
+
+
+@media(max-width:767px) {
+  .skills h1 {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+  .skills {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .skills-conteudo {
+    gap: 20px;
+  }
+}
