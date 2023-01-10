@@ -13,7 +13,8 @@
     <header class="header-bg">
       <div class="header container">
         <a href="./index.html"><img src="img/Logo CV.svg" alt="Logo Caio" class="logocv"></a>
-        <nav class="js-menu">
+        <nav class="js-menu" data-menu="suave" id="nav">
+        <span id="btn-mobile"></span>
           <ul class="navbar">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
@@ -48,7 +49,7 @@
     <div class="sobre container  anima-scroll" id="sobre">
       <div class="sobre-text">
         <h1 class="title">Sobre mim</h1>
-        <p class="sobre-desc">Sou estudante do 1º período de  <span>Análise e Desenvolvimento de Sistemas</span>, pelo Instituto Federal de Pernambuco <span>(IFPE)</span>, paralelamente, estou me aprofundando na área de desenvolvimento web, atraves de cursos intensivos e projetos pessoais. Também tenho conhecimentos em Ui Design. Estou em busca da minha primeira oportunidade profissional na área de tecnologia.</p>
+        <p class="sobre-desc">Sou estudante do 1º período de  <span>Análise e Desenvolvimento de Sistemas</span>, pelo Instituto Federal de Pernambuco <span>(IFPE)</span>, paralelamente, estou me aprofundando na área de desenvolvimento web, atraves de cursos intensivos e projetos pessoais. Também tenho conhecimentos em Ui Design. Estou em busca de uma oportunidade como estagiário ou dev jr.</p>
         <button class="btn-download"><img src="img/baixar.svg" alt="baixar icon">Baixar CV</button>
       </div>
       <div class="sobre-card">
@@ -85,28 +86,28 @@
       <h1>Projetos de estudo</h1>
       <div class="projetos-conteudo">
         <div class="projeto">
-          <img src="img/projeto1.png" alt="">
+          <img src="img/portifolio.png" alt="">
             <div class="p">
               <div class="p1">
                 <h2>Portifólio</h2>
                 <p>-Html <br>-Css <br>-Javascript</p> 
               </div>
               <div class="p2">
-                <a href="">Repositório</a>
-                <a href="">Behance</a>
+                <a href="https://github.com/caiovncs/portifolio" target="_blank">Repositório</a>
+                <a href="https://www.behance.net/gallery/160593061/Portifolio-Ui" target="_blank">Behance</a>
               </div>
             </div>
         </div>
         <div class="projeto">
-          <img src="img/projeto2.png" alt="">
+          <img src="img/animaisFantasticos.png" alt="">
             <div class="p">
               <div class="p1">
                 <h2>Animais Fanstásticos</h2>
                 <p>-Html <br>-Css <br>-Javascript</p> 
               </div>
               <div class="p2">
-                <a href="">Repositório</a>
-                <a href="">Demo</a>
+                <a href="https://github.com/caiovncs/animais-fantasticos" target="_blank">Repositório</a>
+                <a href="https://caiovncs-animais-fantasticos.netlify.app/" target="_blank">Demo</a>
               </div>
             </div>
         </div>
@@ -137,17 +138,17 @@
             <img src="img/email.svg" alt="">
             <span>devcaiovinicius@gmail.com</span>
           </div>
-          <div class="ctt">
+          <a class="ctt" href="https://wa.me/5581985525735" target="_blank">
             <img src="img/whatsapp.svg" alt="">
             <span>(81) 9.9552-5735</span>
-          </div>
-          <div class="ctt">
+          </a>
+          <a class="ctt" href="https://www.linkedin.com/in/caioviniciusdev/" target="_blank">
             <img src="img/linkedin.svg" alt="">
             <span>Linkedin.com/in/caioviniciusdev</span>
-          </div>
+          </a>
         </div>
       </div>
-      <button class="up">
+      <button class="up" data-up="up">
         <img src="img/up.svg" alt="">
       </button>
     </div>
@@ -158,6 +159,6 @@
       <span>Desenvolvido por Caio Vinícius ©</span>
     </div>
   </footer>
-  <script src="script/script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
