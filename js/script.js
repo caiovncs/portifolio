@@ -12,3 +12,6 @@ animaScroll();
 
 import btnAnima from "./modules/animaBtn.js";
 btnAnima();
+
+import animaDev from "./modules/animaDev.js";
+animaDev();

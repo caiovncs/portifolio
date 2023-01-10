@@ -74,7 +74,6 @@
 }
 
 .text-hero h1 {
-  margin-bottom: 20px;
   font: 500 2.75rem/48px "Rubik";
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -82,6 +81,11 @@
   background-clip: text;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
+  /* visibility: 0; */
+}
+
+.front {
+  margin-bottom: 20px;
 }
 
 @keyframes animationName {
@@ -136,9 +140,11 @@
     max-height: 260px;
   }
   .text-hero h1 {
-    margin-bottom: 1rem;
     font-size: 2rem;
     line-height: 36px;
+  }
+  .front {
+    margin-bottom: 16px;
   }
   .text-hero h2 {
     font-size: 1rem;

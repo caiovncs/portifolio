@@ -3,6 +3,5 @@ export default function btnAnima() {
 
   setInterval(() => {
     botaoAnima.classList.add('ativo')
-  }, 1000)
-  // botaoAnima.classList.remove('ativo')
+  }, 1450)
 }
