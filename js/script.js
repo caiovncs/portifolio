@@ -5,4 +5,10 @@ import up from "./modules/up.js";
 up();
 
 import menuMobile from "./modules/menu-mobile.js";
-menuMobile()
+menuMobile();
+
+import animaScroll from "./modules/anima-scroll.js";
+animaScroll();
+
+import btnAnima from "./modules/animaBtn.js";
+btnAnima();

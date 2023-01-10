@@ -108,4 +108,7 @@
     max-width: 220px;
   }
 
+  .sobre-text > .btn-download {
+    display: none;
+  }
 }
