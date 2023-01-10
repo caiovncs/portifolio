@@ -37,6 +37,8 @@
 @keyframes btnKey {
   0% {
     box-shadow: 0px;
+    padding: 12px 32px;
+
   }
   50% {
     box-shadow: 0px 0px 20px 0px #007AC199;
@@ -48,6 +50,7 @@
 
 .btn-download.ativo {
   animation: btnKey 1.5s;
+  padding: 12px 38px;
 }
 
 .img-hero img{
