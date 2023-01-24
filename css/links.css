@@ -1,7 +1,6 @@
 .links-bg {
   background-color: var(--c1);
   box-shadow: inset 0 -50px var(--b1);
-  /* overflow-x: hidden; */
   padding: 0px 20px;
 
 }
@@ -17,7 +16,6 @@
   align-items: center;
   padding: 28px;
   border-radius: 5px;
-  /* animation: scrollTop .8s forwards; */
 }
 
 .links a {
@@ -73,11 +71,3 @@
   justify-content: space-between;
   }
 }
-
-/* @media(max-width:1023px) {
-  
-}
-
-@media(max-width:767px) {
-
-} */

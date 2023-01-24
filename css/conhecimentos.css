@@ -76,7 +76,6 @@
 }
 
 .s:hover>h2{
-  /* color: var(--border); */
   transition: all .3s ease-out;
 }
 

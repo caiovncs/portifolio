@@ -98,7 +98,6 @@ margin-top: 4px;
   padding: 8px 28px;
   border-radius: 5px;
   border: 2px solid var(--border);
-  /* align-items: center; */
   transition: all .3s ease-out;
   width: 152px;
 }
